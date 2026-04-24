@@ -1,51 +1,16 @@
-# ANTIGRAVITY 🚀
-**AI-Powered Code Readability Evaluation Tool**
+# React + Vite
 
----
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Quick Start
+Currently, two official plugins are available:
 
-### 1. Start Backend
-```powershell
-cd d:\ArduinoData\antigravity
-.\start-backend.ps1
-```
-Backend runs on: `http://localhost:8000`
-API docs: `http://localhost:8000/docs`
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### 2. Start Frontend
-```powershell
-cd d:\ArduinoData\antigravity\frontend
-npm run dev
-```
-Frontend runs on: `http://localhost:5173`
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Tech Stack
-- **Frontend**: React 18 + Vite + Monaco Editor + Recharts + Framer Motion
-- **Backend**: FastAPI + Groq (llama3-70b) + Python AST + radon
-- **Database**: MongoDB (in-memory fallback if unavailable)
-- **Real-time**: WebSocket streaming analysis
+## Expanding the ESLint configuration
 
-## Features
-- ⚡ Live Autopsy Heatmap — real-time line coloring as you type
-- 📊 10 structural metrics via Python AST + radon
-- 🤖 Groq AI narrative, refactoring, cognitive map
-- 🧬 Unique Code DNA SVG fingerprint per codebase
-- 🏆 Team Leaderboard with room codes
-- 💬 AI Coach chat panel with session context
-- 📁 Batch ZIP analysis
-- 📜 Session history with trend chart
-
-## API Endpoints
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/analyze` | POST | Full analysis |
-| `/api/analyze/file` | POST | File upload |
-| `/api/analyze/batch` | POST | ZIP batch |
-| `/api/sessions` | GET | List sessions |
-| `/api/sessions/:id` | GET | Get session |
-| `/api/leaderboard/:room` | GET/POST | Leaderboard |
-| `/api/chat` | POST | AI chat |
-| `/ws/analyze-stream` | WS | Live stream |
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
